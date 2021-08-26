@@ -1,333 +1,50 @@
-
 <!DOCTYPE html>
 <html lang="en">
-    
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="generator" content="Unofficial NC AI Blog">
-    <title>Unofficial NC AI Blog</title>
-    <meta name="author" content="김도윤">
-    
-    
-    
-    <script type="application/ld+json">{"@context":"http://schema.org","@type":"Website","@id":"https://nc-ai.github.io","author":{"@type":"Person","name":"김도윤","sameAs":["https://github.com/nc-ai/"]},"name":"Unofficial NC AI Blog","description":"NC에서 AI 연구하시는 분들의 목소리를 제 선에서(?) 전달하고자 합니다. 가다듬어지지 않은 내용들인 만큼 사전에 양해 부탁드립니다 ^^;","url":"https://nc-ai.github.io"}</script>
-    <meta name="description" content="NC에서 AI 연구하시는 분들의 목소리를 제 선에서(?) 전달하고자 합니다. 가다듬어지지 않은 내용들인 만큼 사전에 양해 부탁드립니다 ^^;">
-<meta property="og:type" content="blog">
-<meta property="og:title" content="Unofficial NC AI Blog">
-<meta property="og:url" content="https://nc-ai.github.io/index.html">
-<meta property="og:site_name" content="Unofficial NC AI Blog">
-<meta property="og:description" content="NC에서 AI 연구하시는 분들의 목소리를 제 선에서(?) 전달하고자 합니다. 가다듬어지지 않은 내용들인 만큼 사전에 양해 부탁드립니다 ^^;">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="김도윤">
-<meta name="twitter:card" content="summary">
-    
-    
-        
-    
-    
-    
-    
-    
-    <!--STYLES-->
-    
-<link rel="stylesheet" href="/assets/css/all.css">
-
-    
-<link rel="stylesheet" href="/assets/css/jquery.fancybox.css">
-
-    
-<link rel="stylesheet" href="/assets/css/thumbs.css">
-
-    
-<link rel="stylesheet" href="/assets/css/tranquilpeak.css">
-
-    <!--STYLES END-->
-    
-
-    
-
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>NC AI R&D</title>
 </head>
-
-    <body>
-        <div id="blog">
-            <!-- Define author's picture -->
-
-
-    
-
-<header id="header" data-behavior="2">
-    <i id="btn-open-sidebar" class="fa fa-lg fa-bars"></i>
-    <div class="header-title">
-        <a
-            class="header-title-link"
-            href="/%20"
-            aria-label=""
-        >
-            Unofficial NC AI Blog
-        </a>
-    </div>
-    
-        
-            <a
-                class="header-right-picture "
-                href="#about"
-                aria-label="Open the link: /#about"
-            >
-        
-        
-        </a>
-    
-</header>
-
-            <!-- Define author's picture -->
-
-
-<nav id="sidebar" data-behavior="2">
-    <div class="sidebar-container">
-        
-        
-            <ul class="sidebar-buttons">
-            
-                <li class="sidebar-button">
-                    
-                        <a  class="sidebar-button-link "
-                             href="/%20"
-                            
-                            title="Home"
-                        >
-                    
-                        <i class="sidebar-button-icon fa fa-home" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Home</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a  class="sidebar-button-link "
-                             href="/all-categories"
-                            
-                            title="Categories"
-                        >
-                    
-                        <i class="sidebar-button-icon fa fa-bookmark" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Categories</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a  class="sidebar-button-link "
-                             href="/all-tags"
-                            
-                            title="Tags"
-                        >
-                    
-                        <i class="sidebar-button-icon fa fa-tags" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Tags</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a  class="sidebar-button-link "
-                             href="/all-archives"
-                            
-                            title="Archives"
-                        >
-                    
-                        <i class="sidebar-button-icon fa fa-archive" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Archives</span>
-                    </a>
-            </li>
-            
-                <li class="sidebar-button">
-                    
-                        <a  class="sidebar-button-link open-algolia-search"
-                             href="#search"
-                            
-                            title="Search"
-                        >
-                    
-                        <i class="sidebar-button-icon fa fa-search" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">Search</span>
-                    </a>
-            </li>
-            
-        </ul>
-        
-            <ul class="sidebar-buttons">
-            
-                <li class="sidebar-button">
-                    
-                        <a  class="sidebar-button-link " href="https://github.com/nc-ai/" target="_blank" rel="noopener" title="GitHub">
-                    
-                        <i class="sidebar-button-icon fab fa-github" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">GitHub</span>
-                    </a>
-            </li>
-            
-        </ul>
-        
-            <ul class="sidebar-buttons">
-            
-                <li class="sidebar-button">
-                    
-                        <a  class="sidebar-button-link "
-                             href="/atom.xml"
-                            
-                            title="RSS"
-                        >
-                    
-                        <i class="sidebar-button-icon fa fa-rss" aria-hidden="true"></i>
-                        <span class="sidebar-button-desc">RSS</span>
-                    </a>
-            </li>
-            
-        </ul>
-        
-    </div>
-</nav>
-
-            
-            <div id="main" data-behavior="2"
-                 class="
-                        hasCoverMetaIn
-                        ">
-                <section class="postShorten-group main-content-wrap">
-    
-    
-    <article class="postShorten postShorten--thumbnailimg-bottom">
-        <div class="postShorten-wrap">
-            
-            <div class="postShorten-header">
-                <h1 class="postShorten-title">
-                    
-                        <a
-                            class="link-unstyled"
-                            href="/2020/02/06/hello-world/"
-                            aria-label=": Hello World"
-                        >
-                            Hello World
-                        </a>
-                    
-                </h1>
-                <div class="postShorten-meta">
-    <time datetime="2020-02-06T22:44:56+09:00">
-	
-		    Feb 06, 2020
-    	
-    </time>
-    
-</div>
-
-            </div>
-            
-                <div class="postShorten-content">
-                    <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-                    
-                        
-
-
-                    
-                    
-                        <p>
-                            <a
-                                href="/2020/02/06/hello-world/#post-footer"
-                                class="postShorten-excerpt_link link"
-                                aria-label=""
-                            >
-                                Comment and share
-                            </a>
-                        </p>
-                    
-                </div>
-            
+<body>
+    <div class="grid-2">
+        <div class="section-1">
+            <i class="fas fa-code fa-5x white"></i>
+            <h2>NC AI</h2>
+            <p>Sungnam, Korea.</p>
+            <a href="https://blog.ncsoft.com/rd/all/"><i class="fas fa-blog"></i></a>
+            <a href="https://kr.ncsoft.com/kr/index.do"><i class="fas fa-home"></i></a>
+            <a href="https://nc-ai.github.io/"><i class="fab fa-github"></i></a>
         </div>
-        
-    </article>
-    
-    <div class="pagination-bar">
-    <ul class="pagination">
-        
-        
-        <li class="pagination-number">page 1 of 1</li>
-    </ul>
-</div>
-
-</section>
-
-
-                <footer id="footer" class="main-content-wrap">
-    <span class="copyrights">
-        Copyrights &copy; 2020 김도윤. All Rights Reserved.
-    </span>
-</footer>
-
-            </div>
+        <div class="section-2">
+            <h2>About</h2>
+            <p>We are NCSOFT's AI R&D Group. </p>
+            <p>Via AI technology, we will provide better solutions to have our users experience new values.</p>
             
+            <h2>Our Labs</h2>
+            <h3>AI Center</h3>
+            <ul>
+                <li>Game AI Lab</li>
+                <li>Vision AI Lab</li>
+                <li>Speech AI Lab</li>
+            </ul>
+            <h3>NLP Center</h3>
+            <ul>
+                <li>Language AI Lab</li>
+                <li>Knowledge AI Lab</li>
+            </ul>
+
+            <h2>Our Works</h2>
+            <p></p>
+            <a href="https://nc-moai.github.io/blog/"><i class="fas fa-blog"></i>Go to Motion AI's blog (from Game AI Lab)</a>
+            <a href="https://nc-ai.github.io/speech"><i class="fas fa-blog"></i>Go to Speech AI published papers and demos</a>
+            <a href="https://nc-ai.github.io/knowledge"><i class="fas fa-blog"></i>Go to Knowledge AI published papers and demos</a>
+            
+            <h2>Contact</h2>
+            <p>ai@ncsoft.com</p>
         </div>
-        
-
-
-<div id="about">
-    <div id="about-card">
-        <div id="about-btn-close">
-            <i class="fa fa-times"></i>
-        </div>
-        
-            <h4 id="about-card-name">김도윤</h4>
-        
-            <div id="about-card-bio"><p>author.bio</p>
-</div>
-        
-        
-            <div id="about-card-job">
-                <i class="fa fa-briefcase"></i>
-                <br/>
-                <p>author.job</p>
-
-            </div>
-        
-        
     </div>
-</div>
-
-        
-        
-<div id="cover" style="background-image:url('/assets/images/cover.jpg');"></div>
-        <!--SCRIPTS-->
-
-<script src="/assets/js/jquery.js"></script>
-
-
-<script src="/assets/js/jquery.fancybox.js"></script>
-
-
-<script src="/assets/js/thumbs.js"></script>
-
-
-<script src="/assets/js/tranquilpeak.js"></script>
-
-<!--SCRIPTS END-->
-
-
-
-
-
-    </body>
+</body>
 </html>
